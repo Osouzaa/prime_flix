@@ -1,5 +1,4 @@
 
-Claro, aqui está um exemplo de README para o seu projeto prime_flix:
 
 Prime_Flix
 Prime_Flix é um projeto de aplicativo web construído em ReactJS que permite aos usuários explorar filmes e programas de TV usando a API do The Movie Database (TMDb).
