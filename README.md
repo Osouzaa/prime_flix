@@ -1,45 +1,59 @@
 
+# Prime Flix
 
-Prime_Flix
-Prime_Flix é um projeto de aplicativo web construído em ReactJS que permite aos usuários explorar filmes e programas de TV usando a API do The Movie Database (TMDb).
+Prime_Flix Prime_Flix é um projeto de aplicativo web construído em ReactJS que permite aos usuários explorar filmes e programas de TV usando a API do The Movie Database (TMDb).
 
-Pré-requisitos
-Antes de começar, certifique-se de ter instalado:
 
-Node.js
-Yarn (ou npm)
-Instalação
-Clone o repositório do GitHub:
-bash
-Copy code
-git clone https://github.com/seu_usuario/prime_flix.git
-Acesse o diretório do projeto:
-bash
-Copy code
-cd prime_flix
-Instale as dependências usando Yarn:
-bash
-Copy code
-yarn install
-Configuração da API
-Para usar a API do TMDb, você precisará de uma chave de API. Siga as instruções em https://www.themoviedb.org/documentation/api para obter sua chave.
+### 📋 Pré-requisitos
 
-Depois de obter sua chave de API, crie um arquivo .env na raiz do projeto e adicione sua chave da seguinte forma:
+- [Node.js](https://nodejs.org/en) - Ambiente de execução JavaScript
 
-env
-Copy code
-REACT_APP_TMDB_API_KEY=SuaChaveDeAPIAqui
-Executando o projeto
-Com todas as dependências instaladas e a chave da API configurada, você pode executar o projeto. Use o seguinte comando:
+### 🔧 instalação
 
-bash
-Copy code
-yarn start
-Isso iniciará o aplicativo em modo de desenvolvimento. Abra http://localhost:3000 para visualizá-lo no navegador.
+1. Clone o repositório:
 
-Contribuindo
-Contribuições são bem-vindas! Se você encontrar problemas ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+```bash
+$ git clone https://github.com/Osouzaa/prime_flix
+```
 
-Licença
-Este projeto está licenciado sob a MIT License.
+2. Instale as dependências:
+
+```bash
+$ yarn
+```
+
+ou
+
+```bash
+$ npm install
+```
+
+3. Execute o aplicativo:
+
+```bash
+# development
+$ yarn start
+
+# watch mode
+$ yarn start:dev
+
+# production mode
+$ yarn start:prod
+```
+
+ou
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+## Autores
+
+- [@GabrielSouza](https://github.com/Osouzaa)
 
