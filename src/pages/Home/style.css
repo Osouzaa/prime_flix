@@ -1,6 +1,20 @@
+.container {
+  display: grid;
+}
+
 .lista-filmes {
   max-width: 800px;
   margin: 14px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 600px) {
+  /* Quando a tela for menor que 600px */
+  .lista-filmes {
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas */
+  }
 }
 
 .loading {
@@ -12,7 +26,7 @@
 
 .lista-filmes article {
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 15px;
   border-radius: 4px;
 }
@@ -20,15 +34,16 @@
 .lista-filmes strong {
   margin-bottom: 14px;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   display: block;
+  height: 35px;
 }
 
 .lista-filmes img {
   width: 900px;
   max-width: 100%;
   max-height: 390px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -43,7 +58,38 @@
   font-size: 24px;
   text-decoration: none;
   background-color: #116feb;
-  color: #FFF;
+  color: #fff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #116feb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0a5ea8;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 18px;
 }

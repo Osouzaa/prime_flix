@@ -21,6 +21,23 @@
   align-items: center;
   margin-bottom: 14px;
 }
+
+@media (max-width: 600px) {
+  .meus-filmes h1 {
+    text-align: center;
+  }
+
+  .meus-filmes li {
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .meus-filmes span {
+    max-width: 20%;
+    text-align: center;
+  }
+  
+}
 .meus-filmes div {
   display: flex;
   justify-content: center;
@@ -40,7 +57,7 @@
   border-radius: 4px;
   border: none;
   background-color: #116feb;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .span-text {
